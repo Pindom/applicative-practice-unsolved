@@ -6,6 +6,9 @@ import { data } from "../data/data";
 
 export function getPlanetsNamesWithMoons(data) {
   // Your code goes here...
+  let planetWithMoon = data.planets.filter(planet => planet.moonsCount >= 1);
+
+  return planetWithMoon.map(planet => planet.name);
 }
 
 
